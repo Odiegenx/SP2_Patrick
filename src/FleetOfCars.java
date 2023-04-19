@@ -19,7 +19,8 @@ public class FleetOfCars {
     }
     @Override
     public String toString(){
-       String msg ="";
+        System.out.println("-------Welcome to Patrick's Fleet of random cars--------");
+        String msg ="--------------------------------------------------------";
         for(Car c: fleet){
            msg += c.toString();
        }

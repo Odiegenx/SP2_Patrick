@@ -8,18 +8,18 @@ public class ElectricCar extends ACar{
         this.maxRange = maxRange;
     }
     public int getBatteryCapacityKWh(){
-        int energyDensityOfGasoline = 34;
-        return batteryCapacity/energyDensityOfGasoline/*batteryCapacity/1000*/;
+        //int energyDensityOfGasoline = 34;
+        return batteryCapacity;
     }
     public int getMaxRangeKm(){
         return maxRange;
     }
     public int getWhPrKm(){
-        return getMaxRangeKm()/getBatteryCapacityKWh();
+        return batteryCapacity*1000/maxRange;
     }
     @Override
     public int getRegistrationFee() {
-        int kmPrLiter = getWhPrKm();
+        int kmPrLiter = (int) (100/(getWhPrKm()/91.25));
         if(20 < kmPrLiter){
             return 330;
         }
@@ -42,7 +42,8 @@ public class ElectricCar extends ACar{
     @Override
     public String toString(){
         String msg = super.toString();
-        msg += "/n runs on electricity and has a max range of: "+maxRange;
+        msg += "\n"+"runs on electricity and has a max range of: "+maxRange+"km";
+        msg += "\n"+"--------------------------------------------------------";
         return msg;
     }
 }

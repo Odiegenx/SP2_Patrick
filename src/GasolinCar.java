@@ -28,7 +28,8 @@ public class GasolinCar extends AFuelCar {
     @Override
     public String toString(){
         String msg = super.toString();
-        msg += "/n and runs on "+getFuelType();
+        msg += "\n"+"runs on "+getFuelType();
+        msg += "\n"+"--------------------------------------------------------";
         return msg;
     }
 }

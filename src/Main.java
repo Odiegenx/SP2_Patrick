@@ -8,9 +8,9 @@ public class Main {
         fleet1.addCar(c1);
         fleet1.addCar(c2);
         fleet1.addCar(c3);
-        System.out.println(c1.toString());
-        System.out.println(fleet1.toString());
-        System.out.println(fleet1.getTotalRegistrationFeeForFleet());
+        //System.out.println(c1);
+        System.out.println(fleet1);
+        System.out.println("Total registration fee for the entire fleet :"+fleet1.getTotalRegistrationFeeForFleet());
     }
 
 }
