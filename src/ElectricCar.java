@@ -43,6 +43,7 @@ public class ElectricCar extends ACar{
     public String toString(){
         String msg = super.toString();
         msg += "\n"+"runs on electricity and has a max range of: "+maxRange+" km";
+        msg += "\n"+"registration fee: "+getRegistrationFee();
         msg += "\n"+"--------------------------------------------------------";
         return msg;
     }

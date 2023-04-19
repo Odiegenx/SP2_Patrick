@@ -26,7 +26,7 @@ public abstract class ACar implements Car{
     @Override
     public String toString(){
             String msg = "";
-            msg += "\n"+"Car registration number: " +getRegistrationNumber()+"\n"+"Car model: "+getModel();
+            msg += "\n"+"Car registration number: " +getRegistrationNumber()+"\n"+"Car make: "+getMake() +"\n"+"Car model: "+getModel();
             return msg;
     }
 }

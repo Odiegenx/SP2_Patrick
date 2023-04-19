@@ -29,6 +29,7 @@ public class GasolinCar extends AFuelCar {
     public String toString(){
         String msg = super.toString();
         msg += "\n"+"runs on "+getFuelType();
+        msg += "\n"+"registration fee: "+getRegistrationFee();
         msg += "\n"+"--------------------------------------------------------";
         return msg;
     }
