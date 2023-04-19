@@ -13,7 +13,8 @@ public class FleetOfCars {
     public int getTotalRegistrationFeeForFleet(){
         int totalFee = 0;
         for(Car c: fleet){
-             totalFee += c.getRegistrationFee();
+            totalFee += c.getRegistrationFee();
+            //System.out.println(totalFee);
         }
         return totalFee;
     }

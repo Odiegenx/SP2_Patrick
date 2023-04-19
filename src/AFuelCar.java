@@ -17,7 +17,7 @@ public abstract class AFuelCar extends ACar {
     @Override
     public String toString(){
         String msg = super.toString();
-        msg += "\n"+"Car has driven: " + totalKmDriven+"\n"+"fuel economy of: "+kmPrLiter+"km/l";
+        msg += "\n"+"Car has driven: " + totalKmDriven+" km"+"\n"+"fuel economy of: "+kmPrLiter+" km/l";
         return msg;
     }
 }

@@ -32,7 +32,7 @@ public class ElectricCar extends ACar{
         if(5 < kmPrLiter && kmPrLiter < 10){
             return 5500;
         }
-        return 10470;
+            return 10470;
     }
     /* For en Elbil gælder de samme regler som for en benzinbil,
     blot skal man først omregne watt-timer pr kilometer til km/l.
@@ -42,7 +42,7 @@ public class ElectricCar extends ACar{
     @Override
     public String toString(){
         String msg = super.toString();
-        msg += "\n"+"runs on electricity and has a max range of: "+maxRange+"km";
+        msg += "\n"+"runs on electricity and has a max range of: "+maxRange+" km";
         msg += "\n"+"--------------------------------------------------------";
         return msg;
     }
